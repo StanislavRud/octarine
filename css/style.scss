@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+header {
+  height: 100px;
+  //border: 1px solid black;
+  display: flex;
+
+  .header__home {
+    padding: 0 40px;
+    background: #4aaee3;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    width: 15%;
+  }
+
+  nav.header__nav {
+    width: 85%;
+    height: 100%;
+    align-items: center;
+    background: #6fcdff;
+    display: flex;
+    padding-left: 70px;
+    //max-width: 1170px;
+    //margin: 0 auto;
+
+    .header__nav-item {
+      display: flex;
+      align-items: center;
+      //padding-left: 100px;
+
+      span {
+        height: 35px;
+        width: 35px;
+        background: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        color: #6fcdff;
+        font-weight: bold;
+      }
+
+      button {
+        background: transparent;
+        border: none;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+body {
+  background: #e4edf4;
+
+  .main-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    .header__form {
+      max-width: 1170px;
+      margin: 0 auto;
+      padding: 30px 70px;
+      background: white;
+      border-radius: 0 0 15px 15px;
+      form.form__addFilm {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        label {
+          text-transform: uppercase;
+          font-size: 15px;
+          font-weight: bold;
+          margin: 30px 0 20px;
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+        input {
+          height: 50px;
+          border-radius: 5px;
+          border: 1px solid #cfe0ec;
+          padding: 10px;
+          font-size: 20px;
+        }
+      }
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+
+      li.films__item {
+        margin-top: 50px;
+        border-radius: 25px;
+        //position: relative;
+        //&::before {
+        //  content: '';
+        //  position: absolute; /* Абсолютное позиционирование */
+        //  left: 0; right: 0; top: 0; bottom: 0;
+        //  background: url('https://latifundist.com/media/gallery/780-s-w/00/00/743/14443413591236832106-52013.jpg') center / cover no-repeat;
+        //  filter: blur(5px);
+        //  border-radius: 25px;
+        //  //z-index: 1;
+        //  margin: 4px;
+        //}
+        .films__item-main {
+          display: flex;
+          justify-content: space-between;
+          padding: 80px 100px;
+          background: url("https://latifundist.com/media/gallery/780-s-w/00/00/743/14443413591236832106-52013.jpg");
+          background-size: cover;
+          background-position-y: center;
+          border-radius: 25px 25px 0 0;
+
+          .films__item-logo {
+            height: 450px;
+            width: 300px;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+
+        .films__item-text {
+          width: 65%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .films__item_text-buttons {
+            button {
+              width: 140px;
+              height: 40px;
+              border-radius: 20px;
+              border: none;
+              font-weight: bolder;
+              color: white;
+              position: relative;
+              font-size: 15px;
+
+              &:first-child {
+                margin-right: 20px;
+              }
+
+              &:hover {
+                cursor: pointer;
+              }
+
+              &:active {
+                top: 2px;
+              }
+
+            }
+
+            button.text__buttons-delete {
+              background: #ff7e70;
+
+              &:hover {
+                box-shadow: 1px 5px 8px 1px #ff7e70;
+                border: 1.5px solid #ff695a;
+              }
+            }
+
+            button.text__buttons-edit {
+              background: #6ecdfd;
+
+              &:hover {
+                box-shadow: 1px 5px 8px 1px #6ecdfd;
+                border: 1.5px solid #2fa5e1
+              }
+            }
+
+          }
+
+          .films__item-title {
+            color: white;
+            font-size: 30px;
+            h2 {
+
+            }
+
+          }
+
+          .films__item-description {
+            color: white;
+
+            p {
+              line-height: 2;
+              //margin-bottom: 30px;
+            }
+
+            .item-description__table {
+              margin-top: 15px;
+              .description__table {
+                display: flex;
+                margin-bottom: 25px;
+
+                .table-left {
+                  width: 170px;
+                  text-transform: uppercase;
+                }
+
+                .table-right {
+                  width: 70%;
+
+                  &.table__actors-right {
+                    line-height: 2;
+                  }
+                }
+
+              }
+            }
+          }
+
+
+        }
+
+        .films__item-footer {
+          height: 95px;
+          background: white;
+          color: red;
+          display: flex;
+          align-items: center;
+          padding-left: 105px;
+          border-radius: 0 0 25px 25px;
+        }
+      }
+    }
+  }
+}

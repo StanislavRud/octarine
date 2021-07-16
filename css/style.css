@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+header {
+  height: 100px;
+  display: flex; }
+  header .header__home {
+    padding: 0 40px;
+    background: #4aaee3;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    width: 15%; }
+  header nav.header__nav {
+    width: 85%;
+    height: 100%;
+    align-items: center;
+    background: #6fcdff;
+    display: flex;
+    padding-left: 70px; }
+    header nav.header__nav .header__nav-item {
+      display: flex;
+      align-items: center; }
+      header nav.header__nav .header__nav-item span {
+        height: 35px;
+        width: 35px;
+        background: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        color: #6fcdff;
+        font-weight: bold; }
+      header nav.header__nav .header__nav-item button {
+        background: transparent;
+        border: none;
+        color: white;
+        font-weight: bold;
+        font-size: 20px; }
+
+body {
+  background: #e4edf4; }
+  body .main-container {
+    max-width: 1170px;
+    margin: 0 auto; }
+    body .main-container .header__form {
+      max-width: 1170px;
+      margin: 0 auto;
+      padding: 30px 70px;
+      background: white;
+      border-radius: 0 0 15px 15px; }
+      body .main-container .header__form form.form__addFilm {
+        display: flex;
+        flex-direction: column;
+        width: 50%; }
+        body .main-container .header__form form.form__addFilm label {
+          text-transform: uppercase;
+          font-size: 15px;
+          font-weight: bold;
+          margin: 30px 0 20px; }
+          body .main-container .header__form form.form__addFilm label:first-child {
+            margin-top: 0; }
+        body .main-container .header__form form.form__addFilm input {
+          height: 50px;
+          border-radius: 5px;
+          border: 1px solid #cfe0ec;
+          padding: 10px;
+          font-size: 20px; }
+    body .main-container ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column; }
+      body .main-container ul li.films__item {
+        margin-top: 50px;
+        border-radius: 25px; }
+        body .main-container ul li.films__item .films__item-main {
+          display: flex;
+          justify-content: space-between;
+          padding: 80px 100px;
+          background: url("https://latifundist.com/media/gallery/780-s-w/00/00/743/14443413591236832106-52013.jpg");
+          background-size: cover;
+          background-position-y: center;
+          border-radius: 25px 25px 0 0; }
+          body .main-container ul li.films__item .films__item-main .films__item-logo {
+            height: 450px;
+            width: 300px; }
+            body .main-container ul li.films__item .films__item-main .films__item-logo img {
+              width: 100%;
+              height: 100%; }
+        body .main-container ul li.films__item .films__item-text {
+          width: 65%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between; }
+          body .main-container ul li.films__item .films__item-text .films__item_text-buttons button {
+            width: 140px;
+            height: 40px;
+            border-radius: 20px;
+            border: none;
+            font-weight: bolder;
+            color: white;
+            position: relative;
+            font-size: 15px; }
+            body .main-container ul li.films__item .films__item-text .films__item_text-buttons button:first-child {
+              margin-right: 20px; }
+            body .main-container ul li.films__item .films__item-text .films__item_text-buttons button:hover {
+              cursor: pointer; }
+            body .main-container ul li.films__item .films__item-text .films__item_text-buttons button:active {
+              top: 2px; }
+          body .main-container ul li.films__item .films__item-text .films__item_text-buttons button.text__buttons-delete {
+            background: #ff7e70; }
+            body .main-container ul li.films__item .films__item-text .films__item_text-buttons button.text__buttons-delete:hover {
+              box-shadow: 1px 5px 8px 1px #ff7e70;
+              border: 1.5px solid #ff695a; }
+          body .main-container ul li.films__item .films__item-text .films__item_text-buttons button.text__buttons-edit {
+            background: #6ecdfd; }
+            body .main-container ul li.films__item .films__item-text .films__item_text-buttons button.text__buttons-edit:hover {
+              box-shadow: 1px 5px 8px 1px #6ecdfd;
+              border: 1.5px solid #2fa5e1; }
+          body .main-container ul li.films__item .films__item-text .films__item-title {
+            color: white;
+            font-size: 30px; }
+          body .main-container ul li.films__item .films__item-text .films__item-description {
+            color: white; }
+            body .main-container ul li.films__item .films__item-text .films__item-description p {
+              line-height: 2; }
+            body .main-container ul li.films__item .films__item-text .films__item-description .item-description__table {
+              margin-top: 15px; }
+              body .main-container ul li.films__item .films__item-text .films__item-description .item-description__table .description__table {
+                display: flex;
+                margin-bottom: 25px; }
+                body .main-container ul li.films__item .films__item-text .films__item-description .item-description__table .description__table .table-left {
+                  width: 170px;
+                  text-transform: uppercase; }
+                body .main-container ul li.films__item .films__item-text .films__item-description .item-description__table .description__table .table-right {
+                  width: 70%; }
+                  body .main-container ul li.films__item .films__item-text .films__item-description .item-description__table .description__table .table-right.table__actors-right {
+                    line-height: 2; }
+        body .main-container ul li.films__item .films__item-footer {
+          height: 95px;
+          background: white;
+          color: red;
+          display: flex;
+          align-items: center;
+          padding-left: 105px;
+          border-radius: 0 0 25px 25px; }
+
+/*# sourceMappingURL=style.css.map */

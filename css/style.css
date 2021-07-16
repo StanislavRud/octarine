@@ -5,6 +5,32 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif; }
 
+.buttons__block button {
+  width: 140px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  font-weight: bolder;
+  color: white;
+  position: relative;
+  font-size: 15px; }
+  .buttons__block button:first-child {
+    margin-right: 20px; }
+  .buttons__block button:hover {
+    cursor: pointer; }
+  .buttons__block button:active {
+    top: 2px; }
+  .buttons__block button.text__buttons-red {
+    background: #ff7e70; }
+    .buttons__block button.text__buttons-red:hover {
+      box-shadow: 1px 5px 8px 1px #ff7e70;
+      border: 1.5px solid #ff695a; }
+  .buttons__block button.text__buttons-blue {
+    background: #6ecdfd; }
+    .buttons__block button.text__buttons-blue:hover {
+      box-shadow: 1px 5px 8px 1px #6ecdfd;
+      border: 1.5px solid #2fa5e1; }
+
 header {
   height: 100px;
   display: flex; }
@@ -72,6 +98,8 @@ body {
           border: 1px solid #cfe0ec;
           padding: 10px;
           font-size: 20px; }
+      body .main-container .header__form .forms__buttons {
+        margin-top: 25px; }
     body .main-container ul {
       list-style: none;
       display: flex;
@@ -98,31 +126,6 @@ body {
           display: flex;
           flex-direction: column;
           justify-content: space-between; }
-          body .main-container ul li.films__item .films__item-text .films__item_text-buttons button {
-            width: 140px;
-            height: 40px;
-            border-radius: 20px;
-            border: none;
-            font-weight: bolder;
-            color: white;
-            position: relative;
-            font-size: 15px; }
-            body .main-container ul li.films__item .films__item-text .films__item_text-buttons button:first-child {
-              margin-right: 20px; }
-            body .main-container ul li.films__item .films__item-text .films__item_text-buttons button:hover {
-              cursor: pointer; }
-            body .main-container ul li.films__item .films__item-text .films__item_text-buttons button:active {
-              top: 2px; }
-          body .main-container ul li.films__item .films__item-text .films__item_text-buttons button.text__buttons-delete {
-            background: #ff7e70; }
-            body .main-container ul li.films__item .films__item-text .films__item_text-buttons button.text__buttons-delete:hover {
-              box-shadow: 1px 5px 8px 1px #ff7e70;
-              border: 1.5px solid #ff695a; }
-          body .main-container ul li.films__item .films__item-text .films__item_text-buttons button.text__buttons-edit {
-            background: #6ecdfd; }
-            body .main-container ul li.films__item .films__item-text .films__item_text-buttons button.text__buttons-edit:hover {
-              box-shadow: 1px 5px 8px 1px #6ecdfd;
-              border: 1.5px solid #2fa5e1; }
           body .main-container ul li.films__item .films__item-text .films__item-title {
             color: white;
             font-size: 30px; }

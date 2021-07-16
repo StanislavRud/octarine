@@ -8,6 +8,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
+.buttons__block {
+
+  button {
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bolder;
+    color: white;
+    position: relative;
+    font-size: 15px;
+
+    &:first-child {
+      margin-right: 20px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:active {
+      top: 2px;
+    }
+
+    &.text__buttons-red {
+      background: #ff7e70;
+
+      &:hover {
+        box-shadow: 1px 5px 8px 1px #ff7e70;
+        border: 1.5px solid #ff695a;
+      }
+    }
+
+    &.text__buttons-blue {
+      background: #6ecdfd;
+
+      &:hover {
+        box-shadow: 1px 5px 8px 1px #6ecdfd;
+        border: 1.5px solid #2fa5e1
+      }
+    }
+
+  }
+}
+
+
 header {
   height: 100px;
   //border: 1px solid black;
@@ -68,25 +114,30 @@ body {
   .main-container {
     max-width: 1170px;
     margin: 0 auto;
+
     .header__form {
       max-width: 1170px;
       margin: 0 auto;
       padding: 30px 70px;
       background: white;
       border-radius: 0 0 15px 15px;
+
       form.form__addFilm {
         display: flex;
         flex-direction: column;
         width: 50%;
+
         label {
           text-transform: uppercase;
           font-size: 15px;
           font-weight: bold;
           margin: 30px 0 20px;
+
           &:first-child {
             margin-top: 0;
           }
         }
+
         input {
           height: 50px;
           border-radius: 5px;
@@ -94,6 +145,10 @@ body {
           padding: 10px;
           font-size: 20px;
         }
+      }
+
+      .forms__buttons {
+        margin-top: 25px;
       }
     }
 
@@ -143,53 +198,13 @@ body {
           justify-content: space-between;
 
           .films__item_text-buttons {
-            button {
-              width: 140px;
-              height: 40px;
-              border-radius: 20px;
-              border: none;
-              font-weight: bolder;
-              color: white;
-              position: relative;
-              font-size: 15px;
-
-              &:first-child {
-                margin-right: 20px;
-              }
-
-              &:hover {
-                cursor: pointer;
-              }
-
-              &:active {
-                top: 2px;
-              }
-
-            }
-
-            button.text__buttons-delete {
-              background: #ff7e70;
-
-              &:hover {
-                box-shadow: 1px 5px 8px 1px #ff7e70;
-                border: 1.5px solid #ff695a;
-              }
-            }
-
-            button.text__buttons-edit {
-              background: #6ecdfd;
-
-              &:hover {
-                box-shadow: 1px 5px 8px 1px #6ecdfd;
-                border: 1.5px solid #2fa5e1
-              }
-            }
 
           }
 
           .films__item-title {
             color: white;
             font-size: 30px;
+
             h2 {
 
             }
@@ -206,6 +221,7 @@ body {
 
             .item-description__table {
               margin-top: 15px;
+
               .description__table {
                 display: flex;
                 margin-bottom: 25px;
